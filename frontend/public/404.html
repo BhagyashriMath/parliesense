@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ParliSense</title>
+  <script>
+    // SPA fallback: Render static site returns 404 for unknown paths.
+    // Redirect back to index.html preserving the full URL (path + query + hash).
+    var loc = window.location;
+    var path = loc.pathname + loc.search + loc.hash;
+    // Store in sessionStorage so the React app can read it after load
+    sessionStorage.setItem('spa_redirect', path);
+    loc.replace(loc.origin + '/');
+  </script>
+</head>
+<body></body>
+</html>
