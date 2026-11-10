@@ -137,8 +137,8 @@ export function LiveSpeechToTextFeed({ className = "", maxHeight }: LiveSpeechTo
           })
         )}
         {interimTranscript && (
-          <div className="p-2.5 rounded-lg border border-sky-500/30 bg-sky-50/20 text-sky-200 text-xs italic">
-            {interimTranscript}<span className="inline-block w-1.5 h-3.5 bg-sky-400 ml-1 animate-pulse align-middle" />
+          <div className="p-2.5 rounded-lg border border-sky-500/40 bg-sky-50 text-sky-900 text-xs italic font-medium">
+            {interimTranscript}<span className="inline-block w-1.5 h-3.5 bg-sky-600 ml-1 animate-pulse align-middle" />
           </div>
         )}
         <div ref={transcriptEndRef} />

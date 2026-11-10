@@ -131,7 +131,7 @@ export function LiveTranscript({ textOnly = false }: LiveTranscriptProps) {
               );
             })}
             {interimTranscript && (
-              <p style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.75, color: "#9ca3af", fontStyle: "italic", margin: 0 }}>
+              <p style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.75, color: "#1e293b", fontStyle: "italic", margin: 0 }}>
                 {interimTranscript}
               </p>
             )}
