@@ -10,7 +10,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { useParliament } from "../../../infrastructure/context/ParliamentContext";
-import { speakAlert, playChamberAlertChime } from "../../../shared/utils/chamberAudio";
+// Audio alerts for transcript are handled centrally in ParliamentContext to avoid duplicates
 import { Mic, Radio } from "lucide-react";
 
 /* ── Offensive word list ─────────────────────────────────── */
@@ -50,37 +50,15 @@ function renderText(text: string, regex: RegExp) {
 }
 
 export function SpeakerTranscriptFeed() {
-  const { telemetry, interimTranscript, isMicActive } = useParliament();
+  const { telemetry, interimTranscript, isMicActive, setIsMicActive } = useParliament();
 
   const transcripts   = telemetry?.recent_transcripts || [];
   const flaggedWords  = telemetry?.ai_output?.flagged_words || [];
   const sessionActive = !!telemetry?.is_active && !telemetry?.is_paused;
 
   const scrollRef  = useRef<HTMLDivElement>(null);
-  const alertedIds = useRef<Set<string>>(new Set());
 
-  /* ── audio alerts ────────────────────────────────────────── */
-  useEffect(() => {
-    if (!sessionActive) return;
-    transcripts.forEach((entry) => {
-      if (alertedIds.current.has(entry.id)) return;
-      const regex = makeRegex(flaggedWords);
-      const offensive = hasOffensive(entry.text, regex);
-      const offtopic  = !offensive && typeof entry.relevance === "number" && entry.relevance < 0.45;
-      if (offensive) {
-        alertedIds.current.add(entry.id);
-        playChamberAlertChime("CRITICAL");
-        speakAlert(
-          "You have used unparliamentary language. This has been recorded. Please maintain decorum.",
-          "RULE_5_OFFENSIVE_LANGUAGE", true
-        );
-      } else if (offtopic) {
-        alertedIds.current.add(entry.id);
-        playChamberAlertChime("MEDIUM");
-        speakAlert("Please return to the active parliamentary agenda.", "RULE_3_OFF_TOPIC", false);
-      }
-    });
-  }, [transcripts, flaggedWords, sessionActive]);
+  /* ── audio alerts are handled centrally in ParliamentContext ── */
 
   /* ── auto-scroll ─────────────────────────────────────────── */
   useEffect(() => {
