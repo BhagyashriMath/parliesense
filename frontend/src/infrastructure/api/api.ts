@@ -16,11 +16,24 @@ function trimTrailingSlash(value: string): string {
   return value.replace(/\/+$/, "");
 }
 
+function normalizeApiBase(raw: string): string {
+  if (!raw) return "";
+  let val = raw.trim().replace(/\/+$/, "");
+  val = val.replace(/\/api$/, "");
+  return val;
+}
+
 /**
- * Empty means same-origin, which keeps the single-service local/Render setup
- * working. Vercel can set these values to the deployed API and WebSocket URLs.
+ * Automatically routes to the live Render backend when deployed on Render,
+ * or reads VITE_API_BASE_URL / VITE_API_URL, or defaults to local server.
  */
-export const API_BASE = trimTrailingSlash(import.meta.env.VITE_API_BASE_URL || "");
+export const API_BASE = normalizeApiBase(
+  import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_URL ||
+  (typeof window !== "undefined" && window.location.hostname.includes("onrender.com")
+    ? "https://parliesense.onrender.com"
+    : "")
+);
 const WS_BASE = trimTrailingSlash(import.meta.env.VITE_WS_URL || "");
 
 function authHeaders(json = false): Record<string, string> {

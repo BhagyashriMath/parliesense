@@ -19,21 +19,21 @@
 import { API_BASE } from "../../infrastructure/api/api";
 
 function getAudioWsUrl(): string {
+  if (API_BASE) {
+    try {
+      const u = new URL(API_BASE);
+      u.protocol = u.protocol === "https:" ? "wss:" : "ws:";
+      u.pathname = "/ws/audio";
+      return u.toString();
+    } catch (_) {}
+  }
   const proto = typeof window !== "undefined" && window.location.protocol === "https:" ? "wss:" : "ws:";
   if (typeof window !== "undefined") {
     const host = window.location.hostname;
     // Connect directly to backend port 3000 on localhost or across Wi-Fi LAN
     return `${proto}//${host}:3000/ws/audio`;
   }
-  if (API_BASE) {
-    try {
-      const u = new URL(API_BASE);
-      u.protocol = u.protocol === "https:" ? "wss:" : "ws:";
-      u.pathname = u.pathname.replace(/\/$/, "") + "/ws/audio";
-      return u.toString();
-    } catch (_) {}
-  }
-  return `${proto}//${typeof window !== "undefined" ? window.location.host : "localhost:3000"}/ws/audio`;
+  return `${proto}//localhost:3000/ws/audio`;
 }
 
 // User-interaction helper to unlock audio context in Chrome/Edge
