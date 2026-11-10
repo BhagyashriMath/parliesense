@@ -202,6 +202,17 @@ async function startServer() {
       ws.on("error", () => audioClients.delete(ws));
     });
 
+    // 15-second ping heartbeat keeps audio WebSocket connections permanently alive across Render/Cloudflare proxies
+    const audioSweep = setInterval(() => {
+      for (const client of audioClients) {
+        if (client.readyState === 1) {
+          try { client.ping(); } catch (_) {}
+        }
+      }
+    }, 15000);
+    audioSweep.unref();
+    httpServer.on("close", () => clearInterval(audioSweep));
+
     wsServer.on("connection", (socket: any) => {
       telemetryService.registerWs(socket);
       socket.on("close", () => {

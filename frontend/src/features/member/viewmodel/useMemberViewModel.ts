@@ -368,6 +368,8 @@ export function useMemberViewModel() {
   useEffect(() => {
     if (isSpeaking) {
       setIsMicActive(true);
+    } else {
+      setIsMicActive(false);
     }
   }, [isSpeaking, setIsMicActive]);
   const allocatedSeconds = currentMember.allocated_time_seconds || 300;

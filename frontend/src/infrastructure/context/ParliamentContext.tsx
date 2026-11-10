@@ -255,6 +255,25 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
     const SpeechRecognitionAPI =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
+    let lastInterimText = "";
+    let interimFlushTimer: ReturnType<typeof setTimeout> | null = null;
+
+    const flushInterim = () => {
+      if (lastInterimText.trim().length >= 2) {
+        const textToCommit = lastInterimText.trim();
+        lastInterimText = "";
+        const isUserSpeakerRole = currentUserRef.current?.role === "speaker";
+        const currentMemberId = isUserSpeakerRole
+          ? (currentUserRef.current?.memberId || "SP001")
+          : (currentUserRef.current?.memberId || selectedMemberIdRef.current);
+
+        sendAudioTelemetry(0, textToCommit, currentMemberId).catch((err) => {
+          console.warn("[STT] Failed to send audio telemetry:", err);
+        });
+        if (!cancelled) setInterimTranscript("");
+      }
+    };
+
     const setupRecognition = () => {
       if (!SpeechRecognitionAPI || cancelled) return null;
       try {
@@ -276,6 +295,8 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
             const text = event.results[i][0].transcript.trim();
             if (event.results[i].isFinal) {
               if (text.length >= 2) {
+                lastInterimText = "";
+                if (interimFlushTimer) clearTimeout(interimFlushTimer);
                 const isUserSpeakerRole = currentUserRef.current?.role === "speaker";
                 const currentMemberId = isUserSpeakerRole
                   ? (currentUserRef.current?.memberId || "SP001")
@@ -290,7 +311,16 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
               interim += text;
             }
           }
+          lastInterimText = interim;
           if (!cancelled) setInterimTranscript(interim);
+
+          // Flush unfinalized interim speech after 1.8s of silence so words are never dropped
+          if (interimFlushTimer) clearTimeout(interimFlushTimer);
+          if (interim.length >= 2) {
+            interimFlushTimer = setTimeout(() => {
+              flushInterim();
+            }, 1800);
+          }
         };
 
         rec.onerror = (e: any) => {
@@ -308,6 +338,7 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
 
         rec.onend = () => {
           recognitionRunning = false;
+          flushInterim();
           if (!cancelled && micActiveRef.current) {
             if (restartTimer) clearTimeout(restartTimer);
             restartTimer = setTimeout(startRecognition, 300);

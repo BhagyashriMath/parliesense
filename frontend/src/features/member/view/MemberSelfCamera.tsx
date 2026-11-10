@@ -278,11 +278,16 @@ export function MemberSelfCamera({
       } catch {}
     }
 
-    // 2. Designated boundary box coordinates matching UI overlay (10% to 90% width, 6% to 80% height)
-    const boundaryLeft = W * 0.10;
-    const boundaryRight = W * 0.90;
-    const boundaryTop = H * 0.06;
-    const boundaryBottom = H * 0.80;
+    // 2. Designated boundary box coordinates matching the square camera viewport:
+    // When 16:9 video is centered in a 1:1 square display, the visible region is from 22% to 78% of width.
+    // The seating box is inset 10% within that visible square:
+    const squareLeft = W * 0.22;
+    const squareRight = W * 0.78;
+    const squareWidth = squareRight - squareLeft;
+    const boundaryLeft = squareLeft + squareWidth * 0.12;
+    const boundaryRight = squareRight - squareWidth * 0.12;
+    const boundaryTop = H * 0.08;
+    const boundaryBottom = H * 0.85;
 
     // 3. Seating boundary compliance:
     // Case A: Inside that box, if NO ONE is showing -> Detect as NOT SEATED / MEMBER_ABSENT
@@ -291,17 +296,15 @@ export function MemberSelfCamera({
 
     if (isFaceDetected && faceBox) {
       missingFaceFrameCount.current = 0;
-      const faceLeft = faceBox.x;
-      const faceRight = faceBox.x + faceBox.width;
-      const faceTop = faceBox.y;
-      const faceBottom = faceBox.y + faceBox.height;
+      const faceCenterX = faceBox.x + faceBox.width / 2;
+      const faceCenterY = faceBox.y + faceBox.height / 2;
 
-      // Completely outside only if there is ZERO overlap with the boundary box:
+      // Outside boundary if the face center is outside the designated seating box:
       const outsideBounds = (
-        faceRight < boundaryLeft ||
-        faceLeft > boundaryRight ||
-        faceBottom < boundaryTop ||
-        faceTop > boundaryBottom
+        faceCenterX < boundaryLeft ||
+        faceCenterX > boundaryRight ||
+        faceCenterY < boundaryTop ||
+        faceCenterY > boundaryBottom
       );
 
       if (outsideBounds) {
