@@ -58,6 +58,7 @@ export class TelemetryService {
   private tickerInterval: any = null;
   private triggeredSpeakerAlerts: Set<string> = new Set();
   private lastAlertTimestamps: Record<string, number> = {};
+  private evaluatedTranscriptIds = new Set<string>();
   private disciplinaryEventKeys = new Set<string>();
 
   constructor() {
@@ -341,9 +342,9 @@ export class TelemetryService {
         party: member?.party
       };
     });
-    const latestTranscriptText = recentTranscripts.length > 0
-      ? recentTranscripts[recentTranscripts.length - 1].text
-      : "";
+    const latestTranscript = recentTranscripts.length > 0 ? recentTranscripts[recentTranscripts.length - 1] : null;
+    const latestTranscriptId = latestTranscript?.id || "";
+    const latestTranscriptText = latestTranscript?.text || "";
 
     const agendaRes = aiService.analyzeSpeechRelevance(latestTranscriptText, this.state.currentBill);
     const emotionRes = aiService.analyzeEmotion(latestTranscriptText, this.state.audioNoiseDb);
@@ -383,7 +384,7 @@ export class TelemetryService {
     };
 
     if (isLiveActive && this.state.activeSpeakerId) {
-      this.evaluateRules(aiOutput, activeMember, clock.memberSeconds[activeMember.member_id] ?? speakingTime, nowStr, emotionRes, hasWellRush);
+      this.evaluateRules(aiOutput, activeMember, clock.memberSeconds[activeMember.member_id] ?? speakingTime, nowStr, emotionRes, hasWellRush, latestTranscriptId);
     }
 
     const alerts = alertRepository.getCachedAlerts();
@@ -446,8 +447,9 @@ export class TelemetryService {
     };
   }
 
-  private evaluateRules(aiOutput: any, activeMember: MemberEntity, speakingTime: number, nowStr: string, emotionRes: any, hasWellRush: boolean) {
+  private evaluateRules(aiOutput: any, activeMember: MemberEntity, speakingTime: number, nowStr: string, emotionRes: any, hasWellRush: boolean, latestTranscriptId: string = "") {
     const warningTime = (activeMember.allocated_time_seconds || 300) * 0.85;
+    const isNewSpeechSnippet = Boolean(latestTranscriptId && !this.evaluatedTranscriptIds.has(latestTranscriptId));
 
     // An active emergency must not be re-broadcast every tick; only fire once
     // until it is acknowledged/reset.
@@ -473,7 +475,8 @@ export class TelemetryService {
       });
     }
 
-    if (aiOutput.offensive && (Boolean(aiOutput.transcript?.trim()) || this.state.forcedEvent === "OFFENSIVE") && !this.shouldThrottle("RULE_5_OFFENSIVE_LANGUAGE", 30000)) {
+    if (aiOutput.offensive && (Boolean(aiOutput.transcript?.trim()) || this.state.forcedEvent === "OFFENSIVE") && isNewSpeechSnippet && !this.shouldThrottle("RULE_5_OFFENSIVE_LANGUAGE", 30000)) {
+      if (latestTranscriptId) this.evaluatedTranscriptIds.add(latestTranscriptId);
       const alertId = `ALT-OFF-${Date.now()}`;
       const wordList = aiOutput.flagged_words.length > 0 ? ` ('${aiOutput.flagged_words.join(", ")}')` : "";
       alertRepository.save({
@@ -495,7 +498,8 @@ export class TelemetryService {
       this.recordDisciplinaryEvent(activeMember, alertId, "OFFENSIVE_LANGUAGE", 10);
     }
 
-    if (aiOutput.transcript?.trim() && aiOutput.agenda_relevance < (rulesConfig?.thresholds?.agenda_similarity_min || 0.38) && speakingTime > 30 && !this.shouldThrottle("RULE_3_OFF_TOPIC", 120000)) {
+    if (aiOutput.transcript?.trim() && isNewSpeechSnippet && aiOutput.agenda_relevance < (rulesConfig?.thresholds?.agenda_similarity_min || 0.38) && speakingTime > 30 && !this.shouldThrottle("RULE_3_OFF_TOPIC", 120000)) {
+      if (latestTranscriptId) this.evaluatedTranscriptIds.add(latestTranscriptId);
       const alertId = `ALT-TOP-${Date.now()}`;
       alertRepository.save({
         alert_id: alertId,
@@ -516,7 +520,8 @@ export class TelemetryService {
       this.recordDisciplinaryEvent(activeMember, alertId, "OFF_TOPIC_SPEECH", 10);
     }
 
-    if (emotionRes.isHeated && aiOutput.transcript?.trim() && !this.shouldThrottle("RULE_4_HEATED_DEBATE", 30000)) {
+    if (emotionRes.isHeated && isNewSpeechSnippet && aiOutput.transcript?.trim() && !this.shouldThrottle("RULE_4_HEATED_DEBATE", 30000)) {
+      if (latestTranscriptId) this.evaluatedTranscriptIds.add(latestTranscriptId);
       const alertId = `ALT-EMT-${Date.now()}`;
       alertRepository.save({
         alert_id: alertId,
@@ -685,8 +690,7 @@ export class TelemetryService {
   }
 
   private recordDisciplinaryEvent(member: MemberEntity, alertId: string, category: string, penalty: number) {
-    const bucket = Math.floor(Date.now() / 10000);
-    const key = `${member.member_id}:${category}:${bucket}`;
+    const key = `${member.member_id}:${category}:${alertId}`;
     if (this.disciplinaryEventKeys.has(key)) return;
     this.disciplinaryEventKeys.add(key);
     alertRepository.insertViolation(alertId, member.member_id, category, penalty);

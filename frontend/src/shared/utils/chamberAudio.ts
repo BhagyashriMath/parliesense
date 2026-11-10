@@ -208,7 +208,8 @@ export function speakAlert(
 
   const now = Date.now();
   const lastSpoken = recentSpokenAlerts.get(trimmed) || 0;
-  if (!isUrgent && now - lastSpoken < 4000) return;
+  // Enforce a 30-second cooldown per alert message so each violation is spoken EXACTLY ONCE
+  if (now - lastSpoken < 30000) return;
   recentSpokenAlerts.set(trimmed, now);
 
   const executeSpeak = () => {
