@@ -1,0 +1,349 @@
+{"id":"AUD-1789569322332-f4xds","type":"SESSION_STARTED","timestamp":"2026-09-16T14:35:22.333Z","sessionId":null,"payload":{"session_id":"PAR-2026-001"}}
+{"id":"AUD-1789569349724-kouiv","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:35:49.724Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":1}}}
+{"id":"AUD-1789569354374-pkwiq","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:35:54.374Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":2}}}
+{"id":"AUD-1789569370568-wvlsr","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:10.568Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":3}}}
+{"id":"AUD-1789569378604-07g5r","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:18.604Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":4}}}
+{"id":"AUD-1789569400438-g8lvd","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:40.438Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":5}}}
+{"id":"AUD-1789569402147-zt360","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:42.147Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":6}}}
+{"id":"AUD-1789569407367-2seuf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:47.367Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":7}}}
+{"id":"AUD-1789569413146-0mzk9","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:36:53.146Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":8}}}
+{"id":"AUD-1789569429805-ydeff","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:09.805Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":9}}}
+{"id":"AUD-1789569434553-nc1xy","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:14.553Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":10}}}
+{"id":"AUD-1789569442383-vajsw","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:22.383Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":11}}}
+{"id":"AUD-1789569452373-4ibx7","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:32.373Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":12}}}
+{"id":"AUD-1789569461632-wea6q","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:41.632Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":13}}}
+{"id":"AUD-1789569473909-gcihy","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:37:53.909Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":14}}}
+{"id":"AUD-1789569481464-3g29d","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:01.464Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":15}}}
+{"id":"AUD-1789569485204-hhgd7","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:05.204Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569361647","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569486771-xhyf5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:06.771Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569361647","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569486949-dymx3","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:06.949Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569361647","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569487227-wwwrg","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:07.227Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569361647","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569489689-s8uc7","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:09.689Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569490381-6xhul","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:10.381Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569490677-30004","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:10.677Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569495415-v5hnn","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:15.415Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569495990-tmjay","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:15.990Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569496388-mn2us","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:16.388Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569499029-01ptt","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:19.029Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569499560-utqoi","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:19.560Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569499655-2w05o","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:19.655Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569499847-0rzzb","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:19.847Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":16}}}
+{"id":"AUD-1789569502155-5w1ow","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:22.155Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569502796-bpaxd","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:22.796Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569502887-port4","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:22.887Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569507925-6m8x1","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:27.926Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569509181-mkugf","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:29.181Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569509203-10ldp","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:29.203Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569510534-j27lj","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:30.534Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":17}}}
+{"id":"AUD-1789569513860-qf5ev","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:33.860Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569514664-adnxx","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:34.664Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569515029-2vz4l","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:35.029Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569460505","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569516199-4zz9o","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:36.199Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":18}}}
+{"id":"AUD-1789569518534-kc5eq","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:38.534Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569518649-t3ha4","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:38.649Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569519346-ohsjk","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:39.346Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569523042-8bos3","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:43.043Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569523397-5o37w","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:43.397Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569523586-n1or2","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:43.586Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569525840-pgztx","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:45.840Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":19}}}
+{"id":"AUD-1789569527549-hgq77","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:47.549Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569527574-9h7rc","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:47.574Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569527844-v6w8f","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:47.844Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569530055-rqckn","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:50.055Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569530087-bowzn","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:50.087Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569530276-9gi6p","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:50.276Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569534375-j6zex","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:54.375Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569534674-pxlzz","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:54.674Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569534958-7sqv7","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:54.958Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569538810-gzhk5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:58.810Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569539197-s96cs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:38:59.197Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569539507-x40i9","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:38:59.507Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":20}}}
+{"id":"AUD-1789569541708-1yd07","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:01.708Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569559358-16u5p","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:19.358Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569559621-x4zyo","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:19.621Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569560695-ggrk9","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:20.695Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569563360-e8ihm","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:23.360Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569563476-yiivp","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:23.476Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569564094-oi5da","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:24.094Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":21}}}
+{"id":"AUD-1789569564254-m7x6t","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:24.254Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569564432-i6lrz","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:24.432Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":22}}}
+{"id":"AUD-1789569567426-8pnvd","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:27.426Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":23}}}
+{"id":"AUD-1789569568066-n71eq","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:28.066Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569568252-htryi","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:28.252Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569568593-fnmin","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:28.593Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569571486-4wefm","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:31.487Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569571584-k16p6","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:31.584Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569571812-r5t78","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:31.812Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569577263-u3onz","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:37.263Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569577357-ovung","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:37.357Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569577580-pf05g","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:37.580Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569581173-kpbo7","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:41.173Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":24}}}
+{"id":"AUD-1789569581268-8txgd","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:41.268Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569581712-9m3qi","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:41.712Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569581717-mkmhl","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:39:41.717Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569491278","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789569591665-3f4d6","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:51.665Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":25}}}
+{"id":"AUD-1789569593697-qj6w2","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:53.697Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":24}}}
+{"id":"AUD-1789569596685-oyws1","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:39:56.685Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":25}}}
+{"id":"AUD-1789569621098-4uauf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:21.098Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":26}}}
+{"id":"AUD-1789569621908-lzhho","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:21.908Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":27}}}
+{"id":"AUD-1789569624379-n3bnf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:24.379Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":28}}}
+{"id":"AUD-1789569630812-bztc7","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:30.812Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":29}}}
+{"id":"AUD-1789569632661-24pa9","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:32.662Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":30}}}
+{"id":"AUD-1789569642490-6kuay","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:40:42.490Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":31}}}
+{"id":"AUD-1789569670135-q1cob","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:10.135Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":32}}}
+{"id":"AUD-1789569679834-60mar","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:19.834Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":33}}}
+{"id":"AUD-1789569686300-tgf0b","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:26.300Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":34}}}
+{"id":"AUD-1789569693083-ginnf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:33.083Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":34}}}
+{"id":"AUD-1789569710172-j63ks","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:50.172Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":35}}}
+{"id":"AUD-1789569715551-fhi94","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:55.551Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":35}}}
+{"id":"AUD-1789569717714-7vwaf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:41:57.714Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":36}}}
+{"id":"AUD-1789569723112-gagnr","type":"MEMBER_UPDATED","timestamp":"2026-09-16T14:42:03.112Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":37}}}
+{"id":"AUD-1789570286551-q71tn","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:26.551Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570286508-oelv4","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:26.508Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570286571-wj9zv","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:26.571Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570287228-6ud0e","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:27.228Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570287232-hoobs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:27.232Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570288376-55cje","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:28.376Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570288590-3r12f","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:28.590Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570288834-9x2k1","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:28.834Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570289055-inp1e","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:29.055Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570289933-7pxk9","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:29.933Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570291095-fp8lp","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:31.095Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570290841-8v04e","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:30.842Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569680191","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570295637-036jb","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:35.638Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570296590-dl9nc","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:36.590Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570296657-4napf","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:36.657Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570296619-5b6dg","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:36.619Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570296101-qaelj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:36.101Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570298091-oitxs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:38.091Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570298491-ubeym","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:38.491Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570298733-byyjs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:38.733Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570298875-teals","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:38.875Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570300652-zrkc5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:40.652Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570301109-bar04","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:41.109Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570300856-hc8rj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:40.856Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570301175-4t5oi","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:41.175Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570301315-o2rdq","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:41.315Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570303175-k07cj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:43.175Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570303867-fbw36","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:43.867Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570303995-b1rvk","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:43.995Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569604229","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570304028-2extp","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:44.029Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570304572-754q5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:44.572Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570306060-rdh79","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:46.060Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570306657-pa4el","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:46.657Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570307240-enmov","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:47.240Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570307334-t44gw","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:47.334Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570307559-5lhz8","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:47.559Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570308164-nlnk0","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:48.164Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570309234-efvs3","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:49.234Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570309736-xaue7","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:49.736Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570309743-s7v4r","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:49.743Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570310067-6t1gs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:50.067Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570311290-5s3gj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:51.290Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570312363-2uwnf","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:52.364Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570314113-8qk9t","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:54.113Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570314119-2qni8","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:54.119Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789570316802-9hdsp","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T14:51:56.802Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789569520113","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789577791488-5vc1d","type":"SESSION_STARTED","timestamp":"2026-09-16T16:56:31.488Z","sessionId":null,"payload":{"session_id":"PAR-2026-001"}}
+{"id":"AUD-1789577809107-aty80","type":"MEMBER_UPDATED","timestamp":"2026-09-16T16:56:49.108Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":38}}}
+{"id":"AUD-1789577816094-j8kft","type":"MEMBER_UPDATED","timestamp":"2026-09-16T16:56:56.094Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":39}}}
+{"id":"AUD-1789577824830-u36nb","type":"MEMBER_UPDATED","timestamp":"2026-09-16T16:57:04.830Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":40}}}
+{"id":"AUD-1789578103621-exvrm","type":"SESSION_STARTED","timestamp":"2026-09-16T17:01:43.621Z","sessionId":null,"payload":{"session_id":"PAR-2026-001"}}
+{"id":"AUD-1789578155224-q7hzd","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:02:35.224Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":42}}}
+{"id":"AUD-1789578213959-26zsc","type":"SESSION_STARTED","timestamp":"2026-09-16T17:03:33.959Z","sessionId":null,"payload":{"session_id":"PAR-2026-001"}}
+{"id":"AUD-1789578248074-66g0k","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:08.074Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":1}}}
+{"id":"AUD-1789578251309-6nek6","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:11.309Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":2}}}
+{"id":"AUD-1789578262419-jv1l2","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:22.420Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":3}}}
+{"id":"AUD-1789578270493-l0uqs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:04:30.493Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578260137","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578270929-fjd4d","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:04:30.929Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578260137","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578271109-wnkq2","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:04:31.109Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578260137","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578272108-57z2l","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:32.108Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":4}}}
+{"id":"AUD-1789578273451-13nse","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:04:33.451Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578270576","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578283086-63gyy","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:43.086Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":5}}}
+{"id":"AUD-1789578283979-2ze30","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:04:43.979Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578281312","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578291291-cwmnq","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:04:51.291Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":6}}}
+{"id":"AUD-1789578301440-zilkq","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:01.440Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":7}}}
+{"id":"AUD-1789578308695-nix0s","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:05:08.695Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578290277","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578309211-v0ku6","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:05:09.211Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578290277","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578312641-5kr99","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:12.641Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":8}}}
+{"id":"AUD-1789578324083-9j2pe","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:24.083Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":9}}}
+{"id":"AUD-1789578332633-qdfue","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:32.634Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":10}}}
+{"id":"AUD-1789578343105-g1ksb","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:43.105Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":11}}}
+{"id":"AUD-1789578352017-ymyh5","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:05:52.017Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":12}}}
+{"id":"AUD-1789578362119-1sn1e","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:02.119Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":13}}}
+{"id":"AUD-1789578372629-4ob0v","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:12.629Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":14}}}
+{"id":"AUD-1789578382902-z3kj0","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:22.902Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":15}}}
+{"id":"AUD-1789578391168-6rhs9","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:31.168Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":16}}}
+{"id":"AUD-1789578402532-nbwz6","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:42.532Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":17}}}
+{"id":"AUD-1789578411718-3c1li","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:06:51.718Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":18}}}
+{"id":"AUD-1789578422664-3t5gc","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:02.665Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":19}}}
+{"id":"AUD-1789578433516-agwvr","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:13.516Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":20}}}
+{"id":"AUD-1789578442483-1edte","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:22.483Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":21}}}
+{"id":"AUD-1789578453001-rrxur","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:33.001Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":22}}}
+{"id":"AUD-1789578461638-v2n4b","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:41.638Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":23}}}
+{"id":"AUD-1789578473280-0epji","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:53.281Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":24}}}
+{"id":"AUD-1789578474632-sm9tx","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:07:54.632Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":24}}}
+{"id":"AUD-1789578480835-iyxum","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:00.836Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":25}}}
+{"id":"AUD-1789578492612-yg860","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:12.612Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":26}}}
+{"id":"AUD-1789578504309-cvqnu","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:24.309Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":27}}}
+{"id":"AUD-1789578506947-0qal5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:26.947Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578310307","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578507111-f5skj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:27.111Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578310307","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578507515-ebso5","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:27.515Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578310307","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578508389-6a0y3","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:28.389Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578508684-i7ckm","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:28.684Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578508824-59j4r","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:28.824Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578509040-6lfws","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:29.040Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578511097-he893","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:31.097Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578512053-djv4j","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:32.053Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578512324-azq74","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:32.324Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578513043-wsytx","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:33.043Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578410251","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578516401-bw86p","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:36.401Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578510523","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578518177-6npk0","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:38.177Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":28}}}
+{"id":"AUD-1789578520603-o5ayw","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:40.603Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":29}}}
+{"id":"AUD-1789578522809-d9692","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:42.809Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578523665-cqayz","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:43.665Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578525474-sbvia","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:45.474Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578527353-pr75r","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:47.353Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578529157-7yd2i","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:49.157Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578529262-fywet","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:49.262Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578530258-lx2oz","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:50.258Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578531583-tmwu0","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:51.583Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":30}}}
+{"id":"AUD-1789578531701-6vra1","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:51.701Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578531975-zok5g","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:51.975Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578531677-jw3de","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:51.677Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578533651-pcl2k","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:53.651Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578535756-6tuyj","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:55.756Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578535915-wsqld","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:55.915Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578536531-afhfs","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:56.531Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578537805-16yyr","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:08:57.805Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578516661","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578539954-203mn","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:08:59.954Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":31}}}
+{"id":"AUD-1789578560471-3c537","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:20.471Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578560562-1jidf","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:20.562Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578561233-c5uud","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:21.233Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578561292-sjzrl","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:21.292Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578570391-qaczt","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:30.391Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":32}}}
+{"id":"AUD-1789578573790-u40ql","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:33.790Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578575172-q1rdg","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:35.172Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578575501-uer2r","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:09:35.501Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578530003","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789578576670-k9xjp","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:36.670Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":33}}}
+{"id":"AUD-1789578578589-snwaz","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:38.589Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":34}}}
+{"id":"AUD-1789578579155-3i36n","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:39.155Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":35}}}
+{"id":"AUD-1789578586299-gr3zn","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:46.299Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":36}}}
+{"id":"AUD-1789578597113-e0mhb","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:09:57.113Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":37}}}
+{"id":"AUD-1789578601519-7f4pm","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:10:01.519Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":38}}}
+{"id":"AUD-1789578613670-u659f","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:10:13.670Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":39}}}
+{"id":"AUD-1789578624106-vjgal","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:10:24.106Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":40}}}
+{"id":"AUD-1789578631933-zcmnp","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:10:31.933Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":41}}}
+{"id":"AUD-1789578642463-lgzr7","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:10:42.463Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":42}}}
+{"id":"AUD-1789578660379-wbvkv","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:00.379Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":43}}}
+{"id":"AUD-1789578661855-j78hd","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:01.855Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":44}}}
+{"id":"AUD-1789578688749-iqns1","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:28.749Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":45}}}
+{"id":"AUD-1789578690432-wkzaw","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:30.432Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":46}}}
+{"id":"AUD-1789578690833-ds958","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:30.833Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":46}}}
+{"id":"AUD-1789578711863-v28ae","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:11:51.863Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":48}}}
+{"id":"AUD-1789578720308-malpf","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:00.308Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":47}}}
+{"id":"AUD-1789578726644-67vd3","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:06.644Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":48}}}
+{"id":"AUD-1789578740917-u0q2b","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:20.917Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":49}}}
+{"id":"AUD-1789578745696-s54q9","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:25.696Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":50}}}
+{"id":"AUD-1789578754871-elxmy","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:34.872Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":51}}}
+{"id":"AUD-1789578761810-mkaa0","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:12:41.810Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":52}}}
+{"id":"AUD-1789578800877-jrju3","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:20.877Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":53}}}
+{"id":"AUD-1789578806895-xal2p","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:26.895Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":54}}}
+{"id":"AUD-1789578810130-afqz7","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:30.130Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":55}}}
+{"id":"AUD-1789578814903-qn5s6","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:34.903Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":56}}}
+{"id":"AUD-1789578817517-ys2v3","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:37.517Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":55}}}
+{"id":"AUD-1789578829587-qfwks","type":"SIMULATION_EVENT_TRIGGERED","timestamp":"2026-09-16T17:13:49.587Z","sessionId":null,"payload":{"event_type":"UNAUTHORIZED_STANDING"}}
+{"id":"AUD-1789578833896-l7h69","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:53.896Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":56}}}
+{"id":"AUD-1789578836729-qz1ke","type":"MEMBER_UPDATED","timestamp":"2026-09-16T17:13:56.729Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":1,"violations_count":57}}}
+{"id":"AUD-1789580820874-5psra","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:00.874Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580820890-ows88","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:00.890Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580821378-pojan","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:01.378Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580821381-jf0i2","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:01.381Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580822181-d0bww","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:02.181Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580822288-j4q01","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:02.288Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578650121","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580822306-vkzqm","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:02.306Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578650121","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580821471-g1t5v","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:01.471Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578750831","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580823092-4reae","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:03.092Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578650121","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580823985-ht57x","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:03.985Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578650121","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580825898-00gyd","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:05.898Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578560513","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1789580827128-vbmi0","type":"SUSPENSION_REJECTED","timestamp":"2026-09-16T17:47:07.128Z","sessionId":null,"payload":{"alert_id":"ALT-SUS-M001-1789578560513","dismissed_by":"Hon. Speaker"}}
+{"id":"AUD-1791994971691-ifk0e","type":"SESSION_STARTED","timestamp":"2026-10-14T16:22:51.691Z","sessionId":null,"payload":{"session_id":"PAR-2026-1791994971173"}}
+{"id":"AUD-1792002069364-5pbnk","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T18:21:09.364Z","sessionId":null,"payload":{"member_id":"M001","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792002069725-9hpji","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T18:21:09.725Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792002069274","member_id":"M001","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792002779485-310h2","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T18:32:59.485Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792001569789","member_id":"M002","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792002894740-129rz","type":"SESSION_STOPPED","timestamp":"2026-10-14T18:34:54.740Z","sessionId":null,"payload":{"session_id":"PAR-2026-1791994971173"}}
+{"id":"AUD-1792002911766-d7zp6","type":"SESSION_STARTED","timestamp":"2026-10-14T18:35:11.766Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792002911574"}}
+{"id":"AUD-1792003096797-l2eg0","type":"SESSION_STOPPED","timestamp":"2026-10-14T18:38:16.797Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792002911574"}}
+{"id":"AUD-1792003627304-k902r","type":"SESSION_STARTED","timestamp":"2026-10-14T18:47:07.304Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792003627093"}}
+{"id":"AUD-1792003635781-ebauw","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T18:47:15.781Z","sessionId":null,"payload":{"member_id":"M002","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792003646942-93ohg","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T18:47:26.942Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792003635652","member_id":"M002","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792004128758-7sdbf","type":"SESSION_STOPPED","timestamp":"2026-10-14T18:55:28.758Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792003627093"}}
+{"id":"AUD-1792004136164-v4kx1","type":"SESSION_STARTED","timestamp":"2026-10-14T18:55:36.164Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004135576"}}
+{"id":"AUD-1792004147976-f5y5q","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T18:55:47.981Z","sessionId":null,"payload":{"member_id":"M002","reason":"Urgent Family Matter"}}
+{"id":"AUD-1792004153712-qyuxl","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T18:55:53.712Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792004147834","member_id":"M002","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792004208888-uemuk","type":"SESSION_STOPPED","timestamp":"2026-10-14T18:56:48.888Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004135576"}}
+{"id":"AUD-1792004218489-dk0q7","type":"SESSION_STARTED","timestamp":"2026-10-14T18:56:58.489Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004218255"}}
+{"id":"AUD-1792004224067-zziem","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T18:57:04.067Z","sessionId":null,"payload":{"member_id":"M002","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792004229935-l99uw","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T18:57:09.935Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792004223975","member_id":"M002","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792004258676-2r183","type":"SESSION_STOPPED","timestamp":"2026-10-14T18:57:38.676Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004218255"}}
+{"id":"AUD-1792004392436-h1ju7","type":"SESSION_STARTED","timestamp":"2026-10-14T18:59:52.436Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004392239"}}
+{"id":"AUD-1792004400636-snn8b","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T19:00:00.636Z","sessionId":null,"payload":{"member_id":"M002","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792004406874-ineuh","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-10-14T19:00:06.874Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1792004400549","member_id":"M002","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1792004478102-ltxx2","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T19:01:18.102Z","sessionId":null,"payload":{"member_id":"M002","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792004671359-o7hqe","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T19:04:31.359Z","sessionId":null,"payload":{"member_id":"M001","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1792004697729-aka3a","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-10-14T19:04:57.729Z","sessionId":null,"payload":{"member_id":"M002","reason":"Urgent Family Matter"}}
+{"id":"AUD-1792005960251-o1biy","type":"MEMBER_UPDATED","timestamp":"2026-10-14T19:26:00.251Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":4}}}
+{"id":"AUD-1792009867110-eiev2","type":"SESSION_STOPPED","timestamp":"2026-10-14T20:31:07.110Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792004392239"}}
+{"id":"AUD-1792009870298-85qv7","type":"SESSION_STARTED","timestamp":"2026-10-14T20:31:10.298Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792009870116"}}
+{"id":"AUD-1793885797740-2czfd","type":"SESSION_STOPPED","timestamp":"2026-11-05T13:36:37.740Z","sessionId":null,"payload":{"session_id":"PAR-2026-1792009870116"}}
+{"id":"AUD-1793893359747-vebjc","type":"MEMBER_CREATED","timestamp":"2026-11-05T15:42:39.747Z","sessionId":null,"payload":{"member_id":"M001","name":"Kavya","role":"Member"}}
+{"id":"AUD-1793893422944-38acs","type":"MEMBER_CREATED","timestamp":"2026-11-05T15:43:42.944Z","sessionId":null,"payload":{"member_id":"SP001","name":"Kaveri","role":"Speaker"}}
+{"id":"AUD-1793894571776-vog04","type":"SESSION_STARTED","timestamp":"2026-11-05T16:02:51.776Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793894571764"}}
+{"id":"AUD-1793894643814-zc1a6","type":"SESSION_STOPPED","timestamp":"2026-11-05T16:04:03.814Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793894571764"}}
+{"id":"AUD-1793894931328-ydayy","type":"SESSION_STARTED","timestamp":"2026-11-05T16:08:51.328Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793894931309"}}
+{"id":"AUD-1793894938580-wgixu","type":"SESSION_STOPPED","timestamp":"2026-11-05T16:08:58.580Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793894931309"}}
+{"id":"AUD-1793895021791-fry0v","type":"SESSION_STARTED","timestamp":"2026-11-05T16:10:21.791Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793895021767"}}
+{"id":"AUD-1793895567196-lk2yo","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-11-05T16:19:27.196Z","sessionId":null,"payload":{"member_id":"M001","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1793895575623-5n3hg","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-11-05T16:19:35.623Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1793895567186","member_id":"M001","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1793899048874-flwrf","type":"SESSION_STOPPED","timestamp":"2026-11-05T17:17:28.874Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793895021767"}}
+{"id":"AUD-1793899053657-5urif","type":"SESSION_STARTED","timestamp":"2026-11-05T17:17:33.657Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793899053645"}}
+{"id":"AUD-1793900526641-azptp","type":"SESSION_STOPPED","timestamp":"2026-11-05T17:42:06.642Z","sessionId":null,"payload":{"session_id":"PAR-2026-1793899053645"}}
+{"id":"AUD-1794039503966-mpnxj","type":"SESSION_STARTED","timestamp":"2026-11-07T08:18:23.966Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794039503945"}}
+{"id":"AUD-1794039683321-w9p2h","type":"MEMBER_UPDATED","timestamp":"2026-11-07T08:21:23.321Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":1}}}
+{"id":"AUD-1794039703870-ogc7s","type":"MEMBER_UPDATED","timestamp":"2026-11-07T08:21:43.870Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":2}}}
+{"id":"AUD-1794039710987-njaqp","type":"SESSION_STOPPED","timestamp":"2026-11-07T08:21:50.987Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794039503945"}}
+{"id":"AUD-1794042940806-62idn","type":"SESSION_STARTED","timestamp":"2026-11-07T09:15:40.806Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794042940776"}}
+{"id":"AUD-1794198513853-jbkf1","type":"SESSION_STOPPED","timestamp":"2026-11-09T04:28:33.853Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794042940776"}}
+{"id":"AUD-1794200180748-o01mp","type":"SESSION_STARTED","timestamp":"2026-11-09T04:56:20.748Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794200180735"}}
+{"id":"AUD-1794200290324-hfvhz","type":"MEMBER_UPDATED","timestamp":"2026-11-09T04:58:10.324Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":3}}}
+{"id":"AUD-1794200320612-j6m9f","type":"MEMBER_UPDATED","timestamp":"2026-11-09T04:58:40.612Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":4}}}
+{"id":"AUD-1794200334343-aerpq","type":"SESSION_STOPPED","timestamp":"2026-11-09T04:58:54.343Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794200180735"}}
+{"id":"AUD-1794204553032-chpvm","type":"SESSION_STARTED","timestamp":"2026-11-09T06:09:13.032Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794204553002"}}
+{"id":"AUD-1794204962753-xx0iw","type":"SESSION_STOPPED","timestamp":"2026-11-09T06:16:02.753Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794204553002"}}
+{"id":"AUD-1794204966233-iwdsd","type":"SESSION_STARTED","timestamp":"2026-11-09T06:16:06.233Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794204966220"}}
+{"id":"AUD-1794206604351-k5vsb","type":"MEMBER_UPDATED","timestamp":"2026-11-09T06:43:24.351Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":5}}}
+{"id":"AUD-1794245943540-s6k1i","type":"MEMBER_UPDATED","timestamp":"2026-11-09T17:39:03.540Z","sessionId":null,"payload":{"member_id":"M001","updates":{"warnings_count":0,"violations_count":6}}}
+{"id":"AUD-1794247912544-icdts","type":"SUSPENSION_CONFIRMED","timestamp":"2026-11-09T18:11:52.544Z","sessionId":null,"payload":{"member_id":"M001","member_name":"Kavya","confirmed_by":"Hon. Speaker","suspension_id":"SUSP-1794247912542"}}
+{"id":"AUD-1794248073019-t9qa1","type":"SUSPENSION_REVOKED","timestamp":"2026-11-09T18:14:33.019Z","sessionId":null,"payload":{"member_id":"M001","member_name":"Kavya","revoked_by":"Hon. Speaker","reason":"Speaker parliamentary pardon / reinstatement"}}
+{"id":"AUD-1794248120705-gz5xb","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-11-09T18:15:20.705Z","sessionId":null,"payload":{"member_id":"M001","reason":"Medical Emergency at Desk"}}
+{"id":"AUD-1794249858313-m0e8a","type":"EMERGENCY_EXIT_DECIDED","timestamp":"2026-11-09T18:44:18.313Z","sessionId":null,"payload":{"request_id":"EMG-REQ-1794248120704","member_id":"M001","status":"APPROVED","decided_by":"Hon. Speaker"}}
+{"id":"AUD-1794282208956-du5d6","type":"SUSPENSION_CONFIRMED","timestamp":"2026-11-10T03:43:28.956Z","sessionId":null,"payload":{"member_id":"M001","member_name":"Kavya","confirmed_by":"Hon. Speaker","suspension_id":"SUSP-1794282208953"}}
+{"id":"AUD-1794282215244-y82ge","type":"SUSPENSION_REVOKED","timestamp":"2026-11-10T03:43:35.244Z","sessionId":null,"payload":{"member_id":"M001","member_name":"Kavya","revoked_by":"Hon. Speaker","reason":"Speaker parliamentary pardon / reinstatement"}}
+{"id":"AUD-1794285528941-blnnq","type":"MEMBER_CREATED","timestamp":"2026-11-10T04:38:48.941Z","sessionId":null,"payload":{"member_id":"M002","name":"Bhagya","role":"Member"}}
+{"id":"AUD-1794286557291-bxg8l","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:55:57.291Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":0,"violations_count":1}}}
+{"id":"AUD-1794286598466-61djw","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:56:38.466Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":0,"violations_count":2}}}
+{"id":"AUD-1794286598467-nj0on","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:56:38.467Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":0,"violations_count":3}}}
+{"id":"AUD-1794286633802-9la5g","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:57:13.802Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":0,"violations_count":4}}}
+{"id":"AUD-1794286677311-ngyc8","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:57:57.311Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":0,"violations_count":5}}}
+{"id":"AUD-1794286781392-uowq7","type":"MEMBER_UPDATED","timestamp":"2026-11-10T04:59:41.392Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":1,"violations_count":5}}}
+{"id":"AUD-1794287079222-t77i3","type":"MEMBER_UPDATED","timestamp":"2026-11-10T05:04:39.222Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":1,"violations_count":6}}}
+{"id":"AUD-1794287079223-tbhax","type":"MEMBER_UPDATED","timestamp":"2026-11-10T05:04:39.223Z","sessionId":null,"payload":{"member_id":"M002","updates":{"warnings_count":1,"violations_count":7}}}
+{"id":"AUD-1794287099084-a6jbi","type":"SESSION_STOPPED","timestamp":"2026-11-10T05:04:59.084Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794204966220"}}
+{"id":"AUD-1794287236999-u9ipo","type":"SESSION_STARTED","timestamp":"2026-11-10T05:07:16.999Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794287236987"}}
+{"id":"AUD-1794289100138-0tqfu","type":"SESSION_STOPPED","timestamp":"2026-11-10T05:38:20.138Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794287236987"}}
+{"id":"AUD-1794289131869-3dp75","type":"SESSION_STARTED","timestamp":"2026-11-10T05:38:51.869Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794289131863"}}
+{"id":"AUD-1794289227910-zm33s","type":"SESSION_STOPPED","timestamp":"2026-11-10T05:40:27.910Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794289131863"}}
+{"id":"AUD-1794289306031-wc9p8","type":"SESSION_STARTED","timestamp":"2026-11-10T05:41:46.031Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794289306026"}}
+{"id":"AUD-1794289365540-zf64u","type":"SESSION_STOPPED","timestamp":"2026-11-10T05:42:45.540Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794289306026"}}
+{"id":"AUD-1794289449047-542tb","type":"SESSION_STARTED","timestamp":"2026-11-10T05:44:09.047Z","sessionId":null,"payload":{"session_id":"PAR-2026-1794289449037"}}
+{"id":"AUD-1794290910558-gxgy1","type":"EMERGENCY_EXIT_REQUESTED","timestamp":"2026-11-10T06:08:30.558Z","sessionId":null,"payload":{"member_id":"M001","reason":"Official Legislative Business"}}
