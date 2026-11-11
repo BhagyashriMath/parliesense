@@ -42,7 +42,27 @@ export class AiController {
       });
     }
     let transcript;
-    if (typeof transcript_snippet === "string" && transcript_snippet.trim().length >= 2) {
+    const SYSTEM_ALERT_SUBSTRINGS = [
+      "unparliamentary language",
+      "maintain decorum",
+      "active parliamentary agenda",
+      "maintain silence",
+      "allocated speaking time",
+      "seating boundary",
+      "outside boundary",
+      "no person detected",
+      "not seated",
+      "called to order",
+      "proceedings are now live",
+      "you have the floor",
+      "recommended for suspension",
+      "has been suspended",
+      "emergency exit",
+      "recognized you"
+    ];
+    const isAlertEcho = typeof transcript_snippet === "string" && SYSTEM_ALERT_SUBSTRINGS.some(s => transcript_snippet.toLowerCase().includes(s));
+
+    if (!isAlertEcho && typeof transcript_snippet === "string" && transcript_snippet.trim().length >= 2) {
       const activeSpeakerId = telemetryService.getState().activeSpeakerId;
       const user = req.user;
       const isUserSpeaker = user?.role === "speaker";

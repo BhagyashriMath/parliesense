@@ -498,7 +498,7 @@ export class TelemetryService {
       this.recordDisciplinaryEvent(activeMember, alertId, "OFFENSIVE_LANGUAGE", 10);
     }
 
-    if (aiOutput.transcript?.trim() && isNewSpeechSnippet && aiOutput.agenda_relevance < (rulesConfig?.thresholds?.agenda_similarity_min || 0.38) && speakingTime > 30 && !this.shouldThrottle("RULE_3_OFF_TOPIC", 120000)) {
+    if (aiOutput.transcript?.trim() && isNewSpeechSnippet && (aiOutput.agenda_status === "Off Topic" || aiOutput.agenda_relevance < (rulesConfig?.thresholds?.agenda_similarity_min || 0.40)) && !this.shouldThrottle("RULE_3_OFF_TOPIC", 30000)) {
       if (latestTranscriptId) this.evaluatedTranscriptIds.add(latestTranscriptId);
       const alertId = `ALT-TOP-${Date.now()}`;
       alertRepository.save({

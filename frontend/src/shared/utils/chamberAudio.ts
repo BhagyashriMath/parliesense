@@ -196,6 +196,39 @@ function selectBestVoice(isSpeakerRole: boolean): { voice: SpeechSynthesisVoice 
 
 const recentSpokenAlerts = new Map<string, number>();
 
+let isSystemAlertSpeaking = false;
+let alertEndTimer: ReturnType<typeof setTimeout> | null = null;
+
+export function isSystemAlertPlaying(): boolean {
+  return isSystemAlertSpeaking;
+}
+
+const KNOWN_ALERT_PHRASES = [
+  "unparliamentary language",
+  "maintain decorum",
+  "active parliamentary agenda",
+  "maintain parliamentary language",
+  "maintain silence",
+  "allocated speaking time",
+  "seating boundary",
+  "outside boundary",
+  "no person detected",
+  "not seated",
+  "called to order",
+  "proceedings are now live",
+  "you have the floor",
+  "recommended for suspension",
+  "has been suspended",
+  "emergency exit",
+  "recognized you"
+];
+
+export function isSystemAlertEcho(text: string): boolean {
+  if (!text) return false;
+  const lower = text.toLowerCase();
+  return KNOWN_ALERT_PHRASES.some((phrase) => lower.includes(phrase));
+}
+
 /**
  * Speak an urgent or standard warning/alert message out loud.
  */
@@ -235,20 +268,29 @@ export function speakAlert(
       utt.volume = 1.0;
 
       activeUtterances.add(utt);
+      isSystemAlertSpeaking = true;
+      if (alertEndTimer) clearTimeout(alertEndTimer);
 
-      utt.onend = () => {
+      const markEnd = () => {
         activeUtterances.delete(utt);
+        if (alertEndTimer) clearTimeout(alertEndTimer);
+        // Retain alert suppression flag for 1.2s to absorb speaker reverberation and mic buffer
+        alertEndTimer = setTimeout(() => {
+          isSystemAlertSpeaking = false;
+        }, 1200);
         processFloorSpeechQueue();
       };
+
+      utt.onend = markEnd;
       utt.onerror = (e) => {
         console.warn("[ChamberAudio] speakAlert utterance error:", e);
-        activeUtterances.delete(utt);
-        processFloorSpeechQueue();
+        markEnd();
       };
 
       window.speechSynthesis.speak(utt);
     } catch (err) {
       console.warn("[ChamberAudio] speakAlert error:", err);
+      isSystemAlertSpeaking = false;
     }
   };
 

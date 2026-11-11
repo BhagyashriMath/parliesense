@@ -53,24 +53,35 @@ export class AiService {
     const lower = (text || "").toLowerCase();
     if (!lower.trim()) return { score: 0, isOffTopic: false, matched: [] };
 
+    // Direct off-topic triggers (sports, entertainment, leisure, daily gossip, weather, restaurants)
+    const offTopicKeywords = [
+      "cricket", "football", "match", "tournament", "ipl", "score", "game",
+      "movie", "cinema", "film", "actor", "actress", "song", "music", "dance",
+      "resort", "vacation", "holiday", "trip", "travel", "picnic", "hotel",
+      "shopping", "market", "dinner", "food", "cooking", "recipe", "restaurant",
+      "weather", "rain", "monsoon", "climate", "traffic", "car", "vehicle",
+      "personal property", "real estate", "family matter", "wedding", "party"
+    ];
+    const isDirectOffTopic = offTopicKeywords.some(kw => new RegExp(`\\b${kw}\\b`, "i").test(lower));
+    if (isDirectOffTopic) {
+      return { score: 0.18, isOffTopic: true, matched: [] };
+    }
+
     // Build a topic-aware keyword set.
-    // Always include parliamentary/procedural terms, then enrich with words
-    // derived from the active bill title so detection adapts at runtime.
     const baseKeywords = new Set([
       "education", "school", "schools", "digital", "ai", "teacher", "budget",
       "broadband", "rural", "stem", "grant", "student", "privacy", "governance",
       "infrastructure", "pedagogy", "curriculum", "solar", "connectivity", "audit", "grants"
     ]);
     const topicWords = currentTopic?.toLowerCase().match(/[a-z]{3,}/g) || [];
-    // Replace the default bill-specific base when a different topic is active
-    const stopFunctionWords = new Set(["and", "for", "the", "with", "from", "bill", "act", "into", "that"]);
+    const stopFunctionWords = new Set(["and", "for", "the", "with", "from", "bill", "act", "into", "that", "this", "about"]);
     const hasNewTopic = topicWords.some((w) => !stopFunctionWords.has(w) && !baseKeywords.has(w));
     const keywords = new Set(hasNewTopic ? [] : [...baseKeywords]);
     for (const word of topicWords) {
       if (!stopFunctionWords.has(word)) keywords.add(word);
     }
-    // Always keep parliamentary core terms regardless of topic
-    for (const coreWord of ["parliament", "committee", "legislation", "amendment", "clause", "section", "member", "minister", "honourable"]) {
+    // Parliamentary core terms
+    for (const coreWord of ["parliament", "committee", "legislation", "amendment", "clause", "section", "member", "minister", "honourable", "chair", "speaker", "house", "bill", "debate"]) {
       keywords.add(coreWord);
     }
 
@@ -78,25 +89,23 @@ export class AiService {
       new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`).test(lower)
     );
 
-    if (
-      lower.includes("cricket") ||
-      lower.includes("resort") ||
-      lower.includes("vacation") ||
-      lower.includes("movie") ||
-      lower.includes("personal property")
-    ) {
-      return { score: 0.22, isOffTopic: true, matched: [] };
+    // If topic or parliamentary keywords matched, speech is on-topic
+    if (matched.length > 0) {
+      const score = Math.min(0.98, 0.45 + (matched.length / 4) * 0.50);
+      return { score: Number(score.toFixed(2)), isOffTopic: false, matched };
     }
 
-    const base = (matched.length / 5) * 0.7 + 0.3;
-    // Raise minimum floor: short sentences with no keywords should score 0.50
-    // so normal conversational phrases don't constantly trip the off-topic rule.
-    const score = Math.min(0.98, Math.max(0.50, base));
+    // If 0 keywords matched:
+    const words = lower.split(/\s+/).filter(Boolean);
+    // Short courtesy phrase (< 4 words like "thank you", "yes sir"): neutral, not penalized
+    if (words.length < 4) {
+      return { score: 0.50, isOffTopic: false, matched: [] };
+    }
+
+    // Substantive speech (>= 4 words) with 0 topic or parliamentary keywords is Off-Topic!
     const modelProbability = this.predictModel(this.agendaModel, text).on_topic;
-    const blendedScore = modelProbability === undefined ? score : (score * 0.8) + (modelProbability * 0.2);
-    // Use a lower threshold (0.38) so only genuinely off-topic speech is flagged
-    const minThreshold = rulesConfig?.thresholds?.agenda_similarity_min || 0.38;
-    return { score: Number(blendedScore.toFixed(2)), isOffTopic: blendedScore < minThreshold, matched };
+    const score = modelProbability !== undefined ? Math.min(0.32, Math.max(0.15, modelProbability)) : 0.22;
+    return { score: Number(score.toFixed(2)), isOffTopic: true, matched: [] };
   }
 
   /**

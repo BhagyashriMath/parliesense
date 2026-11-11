@@ -30,7 +30,9 @@ import {
   setChamberMuted,
   playChamberAlertChime,
   speakAlert,
-  speakFloorSpeech
+  speakFloorSpeech,
+  isSystemAlertPlaying,
+  isSystemAlertEcho
 } from "../../shared/utils/chamberAudio";
 import {
   startVoiceSend,
@@ -261,6 +263,10 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
       if (lastInterimText.trim().length >= 2) {
         const textToCommit = lastInterimText.trim();
         lastInterimText = "";
+        if (isSystemAlertPlaying() || isSystemAlertEcho(textToCommit)) {
+          if (!cancelled) setInterimTranscript("");
+          return;
+        }
         const isUserSpeakerRole = currentUserRef.current?.role === "speaker";
         const currentMemberId = isUserSpeakerRole
           ? (currentUserRef.current?.memberId || "SP001")
@@ -289,9 +295,23 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
         };
 
         rec.onresult = (event: any) => {
+          // If system warning alert voice is currently speaking, suppress microphone pickup
+          if (isSystemAlertPlaying()) {
+            lastInterimText = "";
+            if (!cancelled) setInterimTranscript("");
+            return;
+          }
+
           let interim = "";
           for (let i = event.resultIndex; i < event.results.length; i++) {
             const text = event.results[i][0].transcript.trim();
+
+            // Filter out system alert echoes (e.g. "unparliamentary language", "maintain decorum", "seating boundary")
+            if (isSystemAlertEcho(text)) {
+              console.log("[STT] Suppressed system alert voice pickup:", text);
+              continue;
+            }
+
             if (event.results[i].isFinal) {
               if (text.length >= 2) {
                 lastInterimText = "";
