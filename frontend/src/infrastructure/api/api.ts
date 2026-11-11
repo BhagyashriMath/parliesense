@@ -28,13 +28,12 @@ function normalizeApiBase(raw: string): string {
  * or reads VITE_API_BASE_URL / VITE_API_URL, or defaults to local server.
  */
 export const API_BASE = normalizeApiBase(
-  import.meta.env.VITE_API_BASE_URL ||
-  import.meta.env.VITE_API_URL ||
-  (typeof window !== "undefined" && window.location.hostname.includes("onrender.com")
+  (typeof import.meta !== "undefined" && (import.meta as any).env ? ((import.meta as any).env.VITE_API_BASE_URL || (import.meta as any).env.VITE_API_URL) : "") ||
+  (typeof window !== "undefined" && window?.location?.hostname && typeof window.location.hostname === "string" && window.location.hostname.includes("onrender.com")
     ? "https://parliesense.onrender.com"
     : "")
 );
-const WS_BASE = trimTrailingSlash(import.meta.env.VITE_WS_URL || "");
+const WS_BASE = trimTrailingSlash((typeof import.meta !== "undefined" && (import.meta as any).env ? (import.meta as any).env.VITE_WS_URL : "") || "");
 
 function authHeaders(json = false): Record<string, string> {
   const token = typeof window !== "undefined" ? sessionStorage.getItem("parlisense_token") : null;

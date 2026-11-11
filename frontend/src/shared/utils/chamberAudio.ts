@@ -5,6 +5,8 @@
  * is clearly audible to all participants in the chamber.
  */
 
+import { unlockChamberVoice } from "./chamberVoice";
+
 // Global singletons
 let sharedAudioCtx: AudioContext | null = null;
 const activeUtterances = new Set<SpeechSynthesisUtterance>();
@@ -76,6 +78,7 @@ if (typeof window !== "undefined" && "speechSynthesis" in window) {
  */
 export function unlockChamberAudio(playConfirmChime = false) {
   audioUnlocked = true;
+  unlockChamberVoice();
   const ctx = getAudioContext();
   if (ctx && ctx.state === "suspended") {
     ctx.resume().catch(() => {});

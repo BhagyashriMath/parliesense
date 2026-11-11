@@ -175,20 +175,24 @@ async function startServer() {
     const audioServer = new WebSocketServer({ noServer: true, maxPayload: 256 * 1024 });
     audioServer.on("connection", (ws: any) => {
       ws.isSender = false;
+      ws.registered = false;
       audioClients.add(ws);
-      ws.on("message", (chunk: Buffer) => {
-        // First message is a JSON control frame: { type: "register", role: "sender"|"listener" }
-        // Subsequent messages from sender are raw audio binary chunks
-        if (!ws.registered) {
+      ws.on("message", (chunk: any) => {
+        // Control frames are JSON: { type: "register", role: "sender"|"listener" }
+        let isJson = false;
+        if (typeof chunk === "string" || (Buffer.isBuffer(chunk) && chunk.length > 0 && chunk[0] === 123)) {
           try {
             const ctrl = JSON.parse(chunk.toString());
-            ws.isSender = ctrl.role === "sender";
-            ws.registered = true;
-          } catch {
-            ws.registered = true; // treat as listener
-          }
-          return;
+            if (ctrl && ctrl.type === "register") {
+              ws.isSender = ctrl.role === "sender";
+              ws.registered = true;
+              isJson = true;
+            }
+          } catch (_) {}
         }
+        if (isJson) return;
+        if (!ws.registered) ws.registered = true;
+
         // Broadcast audio chunk to all listeners
         if (ws.isSender) {
           for (const client of audioClients) {

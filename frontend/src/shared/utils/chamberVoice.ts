@@ -37,38 +37,47 @@ function getAudioWsUrl(): string {
 }
 
 // User-interaction helper to unlock audio context in Chrome/Edge
+export function unlockChamberVoice() {
+  if (listenerCtx && listenerCtx.state === "suspended") {
+    listenerCtx.resume().catch(() => {});
+  }
+  if (senderCtx && senderCtx.state === "suspended") {
+    senderCtx.resume().catch(() => {});
+  }
+}
+
 if (typeof window !== "undefined") {
-  const unlockAudio = () => {
-    if (listenerCtx && listenerCtx.state === "suspended") {
-      listenerCtx.resume().catch(() => {});
-    }
-    if (senderCtx && senderCtx.state === "suspended") {
-      senderCtx.resume().catch(() => {});
-    }
-  };
-  window.addEventListener("click", unlockAudio, { passive: true });
-  window.addEventListener("keydown", unlockAudio, { passive: true });
-  window.addEventListener("touchstart", unlockAudio, { passive: true });
+  window.addEventListener("click", unlockChamberVoice, { passive: true });
+  window.addEventListener("keydown", unlockChamberVoice, { passive: true });
+  window.addEventListener("touchstart", unlockChamberVoice, { passive: true });
+  window.addEventListener("pointerdown", unlockChamberVoice, { passive: true });
 }
 
 /* ── SENDER ────────────────────────────────────────────────────────── */
 
 let senderWs: WebSocket | null = null;
 let senderStream: MediaStream | null = null;
+let senderOwnsStream = false;
 let senderCtx: AudioContext | null = null;
 let senderProcessor: ScriptProcessorNode | null = null;
 let isSending = false;
 
-export async function startVoiceSend(): Promise<void> {
+export async function startVoiceSend(existingStream?: MediaStream): Promise<void> {
   if (isSending || (senderWs && senderWs.readyState === WebSocket.OPEN)) return;
   isSending = true;
 
-  try {
-    senderStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-  } catch (err) {
-    console.warn("[ChamberVoice] Mic access denied:", err);
-    isSending = false;
-    return;
+  if (existingStream) {
+    senderStream = existingStream;
+    senderOwnsStream = false;
+  } else {
+    try {
+      senderStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+      senderOwnsStream = true;
+    } catch (err) {
+      console.warn("[ChamberVoice] Mic access denied:", err);
+      isSending = false;
+      return;
+    }
   }
 
   try {
@@ -128,7 +137,9 @@ export function stopVoiceSend(): void {
   isSending = false;
   try { senderProcessor?.disconnect(); } catch (_) {}
   try { senderCtx?.close(); } catch (_) {}
-  try { senderStream?.getTracks().forEach((t) => t.stop()); } catch (_) {}
+  if (senderOwnsStream) {
+    try { senderStream?.getTracks().forEach((t) => t.stop()); } catch (_) {}
+  }
   try { senderWs?.close(); } catch (_) {}
   senderProcessor = null;
   senderCtx = null;
@@ -145,8 +156,22 @@ let listenerGain: GainNode | null = null;
 let nextPlayTime = 0;
 let isListening = false;
 let listenerReconnectTimer: ReturnType<typeof setTimeout> | null = null;
-const SAMPLE_RATE = 16000;
 const BUFFER_AHEAD = 0.08; // 80 ms jitter look-ahead
+
+function ensureListenerCtx(): AudioContext | null {
+  const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+  if (!AudioCtx) return null;
+  if (!listenerCtx || listenerCtx.state === "closed") {
+    listenerCtx = new AudioCtx();
+    listenerGain = listenerCtx.createGain();
+    listenerGain.gain.value = 2.5; // Clear floor voice amplification
+    listenerGain.connect(listenerCtx.destination);
+  }
+  if (listenerCtx.state === "suspended") {
+    listenerCtx.resume().catch(() => {});
+  }
+  return listenerCtx;
+}
 
 export function startVoiceListen(): void {
   if (isListening || (listenerWs && (listenerWs.readyState === WebSocket.OPEN || listenerWs.readyState === WebSocket.CONNECTING))) {
@@ -159,20 +184,10 @@ export function startVoiceListen(): void {
     listenerReconnectTimer = null;
   }
 
-  const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
-  if (!listenerCtx || listenerCtx.state === "closed") {
-    listenerCtx = new AudioCtx();
+  const ctx = ensureListenerCtx();
+  if (ctx) {
+    nextPlayTime = ctx.currentTime + BUFFER_AHEAD;
   }
-
-  if (listenerCtx.state === "suspended") {
-    listenerCtx.resume().catch(() => {});
-  }
-
-  listenerGain = listenerCtx.createGain();
-  listenerGain.gain.value = 2.0; // Clear, amplified floor voice so it is easily heard through headphones/speakers
-  listenerGain.connect(listenerCtx.destination);
-
-  nextPlayTime = listenerCtx.currentTime + BUFFER_AHEAD;
 
   try {
     listenerWs = new WebSocket(getAudioWsUrl());
@@ -193,13 +208,8 @@ export function startVoiceListen(): void {
         return;
       }
 
-      if (!listenerCtx || listenerCtx.state === "closed") {
-        listenerCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
-      }
-
-      if (listenerCtx.state === "suspended") {
-        try { await listenerCtx.resume(); } catch (_) {}
-      }
+      const activeCtx = ensureListenerCtx();
+      if (!activeCtx) return;
 
       // Decode Int16 PCM back to Float32
       const int16 = new Int16Array(buffer);
@@ -210,21 +220,21 @@ export function startVoiceListen(): void {
         float32[i] = int16[i] / (int16[i] < 0 ? 0x8000 : 0x7fff);
       }
 
-      const nativeRate = listenerCtx.sampleRate || 48000;
-      const audioBuffer = listenerCtx.createBuffer(1, float32.length, nativeRate);
+      const nativeRate = activeCtx.sampleRate || 48000;
+      const audioBuffer = activeCtx.createBuffer(1, float32.length, nativeRate);
       audioBuffer.copyToChannel(float32, 0);
 
-      const source = listenerCtx.createBufferSource();
+      const source = activeCtx.createBufferSource();
       source.buffer = audioBuffer;
       if (listenerGain) {
         source.connect(listenerGain);
       } else {
-        source.connect(listenerCtx.destination);
+        source.connect(activeCtx.destination);
       }
 
-      const now = listenerCtx.currentTime;
-      // If we fall behind or drift ahead more than 250ms, re-synchronize
-      if (nextPlayTime < now || nextPlayTime > now + 0.25) {
+      const now = activeCtx.currentTime;
+      // Re-synchronize only if we fell behind or drifted ahead more than 1.5 seconds
+      if (nextPlayTime < now || nextPlayTime > now + 1.5) {
         nextPlayTime = now + BUFFER_AHEAD;
       }
 
@@ -233,7 +243,6 @@ export function startVoiceListen(): void {
     };
 
     listenerWs.onerror = () => {
-      // Reconnect if listening was active
       scheduleListenerReconnect();
     };
 

@@ -13,7 +13,9 @@ test('telemetry resolves database arrays before REST/stream serialization', asyn
       analyzeSpeechRelevance: () => ({ score: 1, matched: [] }),
       analyzeEmotion: () => ({ label: 'Neutral', confidence: 1 }),
       analyzeOffensive: () => ({ isOffensive: false, flaggedWords: [] }),
-      generateLiveSummary: () => ({})
+      generateLiveSummary: () => ({}),
+      simulateNoise: () => 52,
+      simulateSeats: (_e, s) => s || {}
     };`,
     '../repositories/alert.repository': `export const alertRepository = {
       getCachedAlerts: () => [],

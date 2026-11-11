@@ -242,7 +242,6 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
 
     // Mic is active — send real voice to all listeners, stop listening to avoid feedback
     stopVoiceListen();
-    startVoiceSend();
 
     let audioContext: AudioContext | null = null;
     let micStream: MediaStream | null = null;
@@ -406,6 +405,7 @@ export function ParliamentProvider({ children }: { children: ReactNode }) {
             return;
           }
           micStream = stream;
+          startVoiceSend(stream);
           audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
           const analyser = audioContext.createAnalyser();
           analyser.fftSize = 256;
